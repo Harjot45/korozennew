@@ -1,4 +1,38 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b203a"><meta name="description" content="Connect with Korzen Health to discuss career opportunities in healthcare."><title>Careers | Korzen Health</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/styles.css"></head><body class="careers-page"><header class="site-header" id="site-header"><div class="container header-inner">
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b203a"><meta name="description" content="Explore current healthcare positions through Korzen Health&#39;s Indeed job board and Healogics Providers."><title>Careers | Korzen Health</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/styles.css">
+<style id="kh-careers-page-css">
+/* The Careers page is intentionally self-contained to avoid conflicts with old hero layouts. */
+.kh-careers-main{background:#f5f9fc;min-height:calc(100vh - 126px);position:relative;overflow:hidden}
+.kh-careers-main:before{content:"";position:absolute;left:-170px;top:70px;width:440px;height:440px;background:radial-gradient(circle,rgba(120,183,222,.13),transparent 70%);pointer-events:none}
+.kh-careers-main:after{content:"";position:absolute;right:-180px;top:180px;width:570px;height:570px;background:radial-gradient(circle,rgba(134,189,222,.15),transparent 71%);pointer-events:none}
+.kh-careers-intro-section{padding:88px 22px 104px;position:relative;z-index:1}
+.kh-careers-container{max-width:1120px;margin:0 auto}
+.kh-careers-heading{text-align:center;max-width:820px;margin:0 auto 39px}
+.kh-careers-kicker{display:inline-flex;align-items:center;gap:9px;color:#467fa7;font-size:12px;letter-spacing:.16em;font-weight:800;text-transform:uppercase;margin-bottom:17px}
+.kh-careers-kicker:before{content:"";width:8px;height:8px;border-radius:50%;background:#7db8dd;box-shadow:0 0 0 5px rgba(105,169,208,.12)}
+.kh-careers-heading h1{font-family:Manrope,'DM Sans',sans-serif;font-size:clamp(37px,4.4vw,60px);font-weight:800;color:#102e4b;line-height:1.16;letter-spacing:-.05em;margin:0 0 17px}
+.kh-careers-heading h1 span{color:#5e99be}
+.kh-careers-heading p{font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:#5b7082;margin:0 auto;max-width:730px}
+.kh-careers-line{width:65px;height:4px;background:#81b5d5;border-radius:12px;margin:26px auto 0}
+.kh-jobboard-card{background:#fff;border:1px solid #e2eaf1;border-radius:26px;padding:42px clamp(20px,5vw,68px) 45px;box-shadow:0 20px 60px rgba(10,37,64,.09),0 3px 8px rgba(10,37,64,.025);margin:0 auto;max-width:850px}
+.kh-jobboard-icon{display:flex;align-items:center;justify-content:center;width:53px;height:53px;margin:0 auto 18px;border-radius:17px;background:#edf6fb;color:#467fa7}
+.kh-jobboard-icon svg{width:28px;height:28px}
+.kh-jobboard-card h2{font-family:Manrope,'DM Sans',sans-serif;text-align:center;color:#183f5b;font-size:clamp(23px,3vw,30px);font-weight:800;line-height:1.25;letter-spacing:-.025em;margin:0 0 10px}
+.kh-jobboard-subtitle{color:#6b8295;font-size:15px;line-height:1.6;text-align:center;margin:0 0 29px}
+.kh-jobboard-actions{display:flex;flex-direction:column;gap:13px;max-width:670px;margin:0 auto}
+.kh-jobboard-link{display:flex;align-items:center;justify-content:center;gap:13px;width:100%;min-height:66px;background:#588fb8;color:#fff!important;border:1px solid #588fb8;border-radius:12px;padding:17px 22px;text-align:center;text-decoration:none!important;font:800 15px/1.35 Manrope,'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 0 rgba(39,92,132,.1);transition:background .2s ease,transform .2s ease,box-shadow .2s ease}
+.kh-jobboard-link:hover,.kh-jobboard-link:focus-visible{background:#123f60;color:#fff!important;box-shadow:0 10px 22px rgba(24,79,118,.18);transform:translateY(-2px)}
+.kh-jobboard-link:focus-visible{outline:3px solid #a5d5ef;outline-offset:3px}
+.kh-jobboard-link svg{width:18px;height:18px;flex-shrink:0}
+.kh-jobboard-link.secondary{background:#0c2f4b;border-color:#0c2f4b}
+.kh-jobboard-link.secondary:hover{background:#246184}
+.kh-jobboard-note{text-align:center;font-size:12px;line-height:1.6;color:#8193a2;margin:22px 0 0}
+.kh-careers-contact{text-align:center;margin:37px auto 0;font-size:15px;line-height:1.65;color:#61788b}
+.kh-careers-contact a{color:#25688f;font-weight:800;text-decoration:none;border-bottom:1px solid #83b2d0;padding-bottom:1px}
+.kh-careers-contact a:hover{color:#0d3553}
+@media(max-width:640px){.kh-careers-intro-section{padding:64px 16px 75px}.kh-careers-heading{margin-bottom:27px}.kh-jobboard-card{border-radius:20px;padding:28px 18px 30px}.kh-jobboard-link{font-size:13px;min-height:61px;letter-spacing:.035em}.kh-jobboard-subtitle{margin-bottom:23px}.kh-careers-heading h1{letter-spacing:-.035em}}
+@media(prefers-reduced-motion:reduce){.kh-jobboard-link{transition:none}}
+</style>
+</head><body class="careers-page"><header class="site-header" id="site-header"><div class="container header-inner">
  <a class="brand" href="index.html" aria-label="Korzen Health home"><img src="assets/korzen-health-logo.png" alt="Korzen Health"></a>
  <nav class="desktop-nav" aria-label="Primary navigation">
   <a class="nav-link" href="index.html">Home</a>
@@ -6,6 +40,7 @@
   <a class="nav-link" href="leadership-team.html">Our Team</a>
   <a class="nav-link" href="our-partners.html">Our Partners</a>
   <a class="nav-link" href="references.html">Testimonials</a>
+  <a class="nav-link current" href="careers.html">Careers</a>
   </nav>
  <div class="header-actions"><a class="header-contact" href="contact-us.html">Let's connect <span class="icon icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a><button class="menu-button" id="menu-button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
  </div><div class="mobile-menu" id="mobile-menu"><nav aria-label="Mobile navigation">
@@ -14,8 +49,31 @@
    <a class="nav-link" href="leadership-team.html">Our Team</a>
    <a class="nav-link" href="our-partners.html">Our Partners</a>
    <a class="nav-link" href="references.html">Testimonials</a>
+   <a class="nav-link current" href="careers.html">Careers</a>
    <a href="contact-us.html" class="mobile-contact">Let's connect <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>
-   </nav></div></header><main id="main"><section class="page-hero"><div class="hero-gridlines"></div><div class="container page-hero-inner"><div class="section-eyebrow light"><span class="eyebrow-line"></span>CAREER CONVERSATIONS</div><h1>Your next chapter<br><em>starts with a conversation.</em></h1><p>Healthcare careers are personal. Connect with the Korzen Health recruitment team to explore professional opportunities and next steps.</p></div><div class="page-hero-orb orb-one"></div><div class="page-hero-orb orb-two"></div></section><section class="section intro-section"><div class="container intro-grid"><div data-reveal><div class="section-eyebrow "><span class="eyebrow-line"></span>FOR HEALTHCARE PROFESSIONALS</div><h2 class="display-h2">Your experience<br><span>deserves attention.</span></h2></div><div class="intro-right" data-reveal><p>Our recruitment team works with healthcare professionals who are considering a new role or leadership transition. Tell us more about your background and where you want to go next.</p><a class="btn btn-primary" href="contact-us.html" >Contact our recruitment team<span class="icon icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div></div></section><section class="closing-cta"><div class="container"><div class="cta-inner"><div class="cta-spark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></div><div><div class="section-eyebrow light"><span class="eyebrow-line"></span>START THE CONVERSATION</div><h2>Where do you want to go next?</h2><p>Share your interests and connect with our team.</p></div><div class="cta-action"><a class="btn btn-primary" href="contact-us.html" >Get in touch<span class="icon icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div></div></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand">
+   </nav></div></header><main id="main" class="kh-careers-main">
+  <section class="kh-careers-intro-section" aria-labelledby="careers-heading">
+    <div class="kh-careers-container">
+      <div class="kh-careers-heading">
+        <div class="kh-careers-kicker">Careers at Korzen Health</div>
+        <h1 id="careers-heading">Current positions<span>.</span></h1>
+        <p>Explore some of the healthcare opportunities we represent for our partners. Choose a job board below to view current openings and find your next opportunity.</p>
+        <div class="kh-careers-line" aria-hidden="true"></div>
+      </div>
+      <div class="kh-jobboard-card">
+        <div class="kh-jobboard-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12c5 3 13 3 18 0M12 13v2"/></svg></div>
+        <h2>Korzen Health Job Board</h2>
+        <p class="kh-jobboard-subtitle">Select a job board to browse available positions.</p>
+        <div class="kh-jobboard-actions">
+          <a class="kh-jobboard-link" href="https://www.indeed.com/cmp/Korzen-Health/jobs" target="_blank" rel="noopener noreferrer" aria-label="Browse Korzen Health jobs on Indeed (opens in a new tab)">Job Board Link <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="kh-jobboard-link secondary" href="https://healogics-providers.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Healogics Providers careers website (opens in a new tab)">Healogics Providers Link <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <p class="kh-jobboard-note">Job boards open in a new tab. Listings are managed by their respective providers.</p>
+      </div>
+      <p class="kh-careers-contact">Need help finding an opportunity? <a href="contact-us.html">Connect with our recruitment team ↗</a></p>
+    </div>
+  </section>
+</main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand">
  <a href="index.html" class="footer-logo" aria-label="Korzen Health home"><img src="assets/korzen-health-logo.png" alt="Korzen Health"></a>
  <p>Thoughtful recruiting. Smarter operations.<br>Stronger healthcare partnerships.</p></div>
  <div class="footer-links"><div><span class="footer-heading">Explore</span><a href="index.html">Home</a><a href="provider-recruitment.html">Provider Recruitment</a><a href="practice-management.html">Practice Management</a><a href="leadership-team.html">Leadership Team</a></div>
